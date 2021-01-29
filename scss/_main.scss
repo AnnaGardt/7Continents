@@ -1,0 +1,76 @@
+.main {
+  padding: 130px 0 90px 0;
+  background-color: $background_page;
+  background-image: url('../images/main-background.jpg');
+  background-position: center 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 57px;
+  }
+  &__subtitle {
+    margin-bottom: 80px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: $text_subtitle;
+  }
+}
+
+.list-main {
+  &__item {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: -800px;
+    display: grid;
+    column-gap: 30px;
+    grid-auto-columns: 50px minmax(min-content, 1fr);
+    row-gap: 15px;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  } 
+  &__img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    max-width: 50px;
+    & img{
+      object-fit: contain;
+    }
+  } 
+  &__title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__text {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@import '_media.scss';

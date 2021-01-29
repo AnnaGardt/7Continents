@@ -1,0 +1,44 @@
+.header {
+  margin: 15px 0 20px 0;
+  &__content {
+    @include flex-row;
+  }
+  &__logo {
+    margin-right: 30px;
+  }
+  &__description {
+    flex-grow: 1;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  &__phones {
+    margin-right: 30px;
+  }
+}
+
+.logo {
+  object-fit: contain;
+  max-height: 70px; 
+}
+
+.phones {
+  @include flex-column;
+  align-items: flex-end;
+  &__text {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  &__link {
+    margin-bottom: 5px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    color: $text_page;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

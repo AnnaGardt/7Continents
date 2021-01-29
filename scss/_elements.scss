@@ -1,0 +1,58 @@
+.btn-action {
+  padding: 15px 30px;
+  background-color: $accent_color;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Circle', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: $text_btn;
+  @include animation;
+  &:hover {
+    background-color: $accent_color_with_hover;
+    box-shadow: 0px 3px 10px 0px rgba(255, 157, 2, 0.6);
+  }
+}
+
+.btn-burger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: $accent_color;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  
+  @include animation;
+  &:active {
+    background-color: $accent_color_with_hover;
+    box-shadow: 0px 3px 10px 0px rgba(255, 157, 2, 0.6);
+  }
+  &__cont {
+    @include btn-line;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:before {
+      content: '';
+      @include btn-line;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: -6px;
+    }
+    &:after {
+      content: '';
+      @include btn-line;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 10px;
+    }
+  }
+}

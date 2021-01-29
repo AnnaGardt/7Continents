@@ -1,0 +1,21 @@
+@import './normalize';
+@import './_variables.scss';
+@import './fonts';
+@import './_base.scss';
+
+@import './_elements.scss';
+@import './_header.scss';
+@import './_main.scss';
+
+body {
+  min-width: 320px;
+  font-family: 'Circle', sans-serif;
+  font-size: 20px;
+  color: $text_page;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}

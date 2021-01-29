@@ -1,0 +1,60 @@
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin animation {
+  transition: all ease-in-out 0.3s;
+}
+
+@mixin btn-line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: $text_btn;
+  border-radius: 3px;
+}
+
+// ************************************* //
+
+@keyframes movement {
+  from { bottom: -800px; }
+  85% { bottom: 15px; }
+  to { bottom: 0 }
+}
+
+.delay {
+  &-one-second {
+    animation-delay: 0;
+  }
+  &-two-second {
+    animation-delay: 1s;
+  }
+  &-three-seconds {
+    animation-delay: 2s;
+  }
+}
+
+// ************************************* //
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
