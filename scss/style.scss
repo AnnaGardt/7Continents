@@ -1,11 +1,12 @@
-@import './normalize';
+@import './_normalize';
 @import './_variables.scss';
-@import './fonts';
+@import './_fonts';
 @import './_base.scss';
 
 @import './_elements.scss';
 @import './_header.scss';
 @import './_main.scss';
+@import './_orderconsultation.scss';
 
 body {
   min-width: 320px;
@@ -19,3 +20,5 @@ body {
   padding: 0 15px;
   max-width: 1200px;
 }
+
+@import './_media.scss';

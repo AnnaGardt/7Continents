@@ -1,0 +1,15 @@
+.order-consultation {
+  padding: 90px 0 100px 0;
+  &__content {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    left: -250px;
+    bottom: -100px;
+    z-index: -1;
+  }
+  &__form {
+    margin: 0 auto;     
+  }
+}

@@ -7,7 +7,9 @@
   background-repeat: no-repeat;
   overflow: hidden;
   &__content {
+    position: relative;
     width: 50%;
+    z-index: 15;
   }
   &__title {
     margin-bottom: 40px;
@@ -22,6 +24,23 @@
     font-size: 30px;
     line-height: 40px;
     color: $text_subtitle;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__girl {
+    position: absolute;
+    bottom: -90px;
+    right: 15%;
+    transform: translateX(50%);
+    z-index: 10;
+  }
+  &__color {
+    position: absolute;
+    bottom: -90px;
+    right: 15%;
+    transform: translateX(50%);
+    z-index: 5;
   }
 }
 
@@ -70,7 +89,5 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-  }
+  }  
 }
-
-@import '_media.scss';

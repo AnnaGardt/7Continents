@@ -1,15 +1,32 @@
 @media (max-width: 1199px) {
   .main {
-    background-position: 40% 30%;
+    &__color {
+      max-width: 700px; 
+    }    
+    &__girl {
+      right: 7%;
+    }
     &__content {
       width: 70%;
     }
+  }
+  .order-consultation {
+    padding-bottom: 70px;
+    &__img {
+      bottom: -70px;
+    }
+  }
+  .form-order__input {
+    width: 220px;
   }
 } 
 
 @media (max-width: 991px) {
   .main {
     padding-top: 70px;
+    &__girl {
+      right: -15%;
+    }
     &__content {
       width: 100%;
     }
@@ -24,6 +41,43 @@
       width: 80%;
     }
   }
+
+  .order-consultation {
+    padding: 70px 0 50px 0;
+    &__form {
+      margin: 0 0 0 auto;
+    }
+    &__img {
+      bottom: -50px;
+    }
+  }
+  .form-order {    
+    width: 60%;
+    &__title, &__subtitle, &__separator, &__text {
+      margin-bottom: 20px;
+    }
+    &__field {
+      margin-bottom: 25px;
+    }
+    &__field {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__input {
+      margin-bottom: 15px;
+      margin-right: 10px;
+      display: block;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .form-order__input {
+    width: 60%;
+  }  
 }
 
 @media (max-width: 767px) {
@@ -36,9 +90,11 @@
       display: none;
     }
   }
-
   .main {
     padding-top: 35px;
+    &__girl {
+      right: -20%;
+    }
     &__title {
       font-size: 50px;
     }
@@ -48,7 +104,6 @@
       line-height: 30px;
     }
   }
-
   .list-main{
     &__item {
       column-gap: 20px;
@@ -59,9 +114,19 @@
       line-height: 20px;
     }
   }
-
   .btn-burger {
     display: block;
+  }
+  .order-consultation {
+    &__img {
+      display: none;
+    }
+  }
+  .form-order {
+    width: 100%;
+    &__input {
+      width: 40%;
+    }
   }
 }
 
@@ -76,11 +141,13 @@
       height: 40px;
     }
   }
-
   .main {
     padding-bottom: 50px;
     background-image: none;
     background-color: $background_page;
+    &__girl, &__color {
+      display: none;
+    }
     &__list {
       width: 100%;
     }
@@ -90,6 +157,22 @@
     }
     &__subtitle {
       text-align: center;
+    }
+  }
+  .form-order {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle, &__phones__link {
+      font-size: 18px;
+    }
+    &__text, &__note {
+      font-size: 14px;
+    }
+    &__input {
+      padding: 10px 15px 10px 45px;
+      background-position: 10% center;
+      width: 60%;
     }
   }
 }

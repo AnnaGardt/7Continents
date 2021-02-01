@@ -2,6 +2,7 @@
   padding: 15px 30px;
   background-color: $accent_color;
   border: none;
+  outline: none;
   border-radius: 40px;
   cursor: pointer;
   text-transform: uppercase;
@@ -27,6 +28,7 @@
   border: none;
   outline: none;
   border-radius: 50%;
+  z-index: 50;
   
   @include animation;
   &:active {
@@ -54,5 +56,96 @@
       transform: translate(-50%, -50%);
       top: 10px;
     }
+  }
+}
+.form-order {
+  width: 70%;
+  text-align: center;
+  &__title {
+    margin-bottom: 30px; 
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+    display: block;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+  }
+  &__separator {
+    margin-bottom: 55px;
+    height: 9px;
+    background-image: url("../images/line.png");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+  &__text {
+    display: block;
+    margin-bottom: 45px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;    
+  }
+  &__field {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__input {
+    position: relative;
+    padding: 16px 20px 16px 60px;
+    width: 270px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid $light-text;
+    background-position: 12% center;
+    background-repeat: no-repeat; 
+    &::placeholder {
+      color: $light-text;
+    }
+  }
+  &__name {    
+    background-image: url("../images/icons/avatar.png");    
+  }
+  &__phone {    
+    background-image: url("../images/icons/phone.png");    
+  }
+  &__submit {
+    padding: 18px 30px;
+  }
+  &__note {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  &__phone-link {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: $text_page;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 15px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/icons/mobile-phone.png");
+      background-size: cover;
+      background-position: center;
+    }
+
   }
 }
