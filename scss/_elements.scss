@@ -28,7 +28,7 @@
   border: none;
   outline: none;
   border-radius: 50%;
-  z-index: 50;
+  z-index: 1000;
   
   @include animation;
   &:active {
@@ -58,22 +58,30 @@
     }
   }
 }
+
+.section-title {
+  font-size: 30px;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .form-order {
   width: 70%;
   text-align: center;
   &__title {
     margin-bottom: 30px; 
-    font-size: 30px;
-    font-family: 'Roboto Slab';
-    font-weight: 700;
-    text-align: center;
   }
   &__subtitle {
     margin-bottom: 50px;
-    display: block;
-    font-size: 22px;
-    line-height: 27px;
-    font-weight: 700;
   }
   &__separator {
     margin-bottom: 55px;
