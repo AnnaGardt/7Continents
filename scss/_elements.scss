@@ -72,6 +72,11 @@
   line-height: 27px;
   font-weight: 700;
   text-align: center;
+  &-attention {
+    padding: 0 10px;
+    color: $text_btn;
+    background-color: $accent_color;
+  }
 }
 
 .form-order {
